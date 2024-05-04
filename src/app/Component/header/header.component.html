@@ -1,0 +1,19 @@
+<nav class="row" [class.boxShadow]="isScrolled">
+    <div class="col-1">
+        <div class="logo" routerLink="">
+            <img src="assets/Images/logo.png" alt="" >
+        </div>
+    </div>
+
+    <div class="col-11">
+        <ul>
+            @for (Route of ListOfRutes1; track $index) {
+                <li>
+                    <button [routerLink]="Route.Route">
+                        {{ Route.Name }}
+                    </button>
+                </li>
+            }
+        </ul>
+    </div>
+</nav>

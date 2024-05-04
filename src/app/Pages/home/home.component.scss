@@ -1,0 +1,88 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.p1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p span{
+    text-align: center;
+    font-size: 120px;
+    font-weight: 700;
+    color: black;
+}
+.slide1{
+    min-height: 90vh;
+    max-width: 100vw;
+    width: 100vw;
+    border-radius: 39% 61% 70% 30% / 50% 60% 40% 50% ;
+    background-color: azure;
+}
+.posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 10px;
+}
+.con1{
+    
+    padding: 30px;
+    padding-top: 50px;
+}
+img{
+    width: 100%;
+}
+.con2{
+    height: 100Vh;
+    margin: 0;
+    padding: 0;
+}
+.col-4{
+    height: 300px;
+    margin: 0;
+}
+.col{
+    height: 100%;
+}
+.imgCard{
+    margin: 0;
+    width: 100%;
+    height: 50%;
+}
+.value{
+    font-size: 5.4rem;
+    font-weight: 650;
+    line-height: 1;
+}
+.imgCard img{
+    height: 100%;
+    width: auto;
+}
+.header{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    height: 30px;
+    font-weight: 500;
+
+}
+@media only screen and (max-width: 500px) {
+    .c{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .con1{
+        padding: 0;
+        margin: 0;
+    }
+    .cart{
+        width: auto;
+    }
+  }

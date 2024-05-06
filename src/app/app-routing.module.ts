@@ -6,8 +6,10 @@ import { RegisterComponent } from './Pages/register/register.component';
 import { ProfileComponent } from './Pages/profile/profile.component';
 import { MatieresComponent } from './Pages/matieres/matieres.component';
 import { ClassComponent } from './Pages/class/class.component';
+import { ListStudentComponent } from './Pages/list-student/list-student.component';
 
 const routes: Routes = [
+  { path: 'ListStudent', component: ListStudentComponent },
   { path: 'Class', component: ClassComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Matieres', component: MatieresComponent },

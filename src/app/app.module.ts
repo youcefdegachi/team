@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import { ClassComponent } from './Pages/class/class.component';
+import { ListStudentComponent } from './Pages/list-student/list-student.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ClassComponent } from './Pages/class/class.component';
     MatieresComponent,
     HeaderComponent,
     FooterComponent,
-    ClassComponent
+    ClassComponent,
+    ListStudentComponent
   ],
   imports: [
     BrowserModule,

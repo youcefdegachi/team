@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CardData } from '../../models/subject.model';
+import { teachignSubject } from '../../models/subject.model';
 
 @Component({
   selector: 'app-class',
@@ -9,7 +9,7 @@ import { CardData } from '../../models/subject.model';
 })
 export class ClassComponent {
 
-  cards: CardData[] = [
+  cards: teachignSubject[] = [
     { subject: 'Programmation', classe: 'DSI21' },
     { subject: 'Developpement', classe: 'DSI21' },
     { subject: 'Programmation', classe: 'DSI22' },

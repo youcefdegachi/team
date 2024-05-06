@@ -4,3 +4,11 @@ export interface Student{
   classe: string;
   isAbsent: boolean;
 }
+
+
+
+export interface teacher{
+  id: number;
+  name: string;
+  classe: string;
+}

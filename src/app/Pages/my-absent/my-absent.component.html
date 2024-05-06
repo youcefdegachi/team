@@ -1,0 +1,23 @@
+
+<div style="margin-top: 50px; margin-left: 50px;">
+  <table class="table">
+    <thead class="table-light">
+      <tr> 
+        <th>#date</th>
+        <th>#isPresent</th>
+      </tr> 
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let season of seasonDetail">
+        <tr>
+          <td>{{ season.dateSession }}</td>
+          <td>{{ season.isPresent ? "Present" : "Absent" }}</td>
+          <td>
+          
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+<h1>Subject: {{ subject }}</h1>
+<h1>Class: {{ studentName }}</h1>

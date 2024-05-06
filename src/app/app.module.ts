@@ -15,6 +15,7 @@ import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import { ClassComponent } from './Pages/class/class.component';
 import { ListStudentComponent } from './Pages/list-student/list-student.component';
+import { MyAbsentComponent } from './Pages/my-absent/my-absent.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListStudentComponent } from './Pages/list-student/list-student.componen
     HeaderComponent,
     FooterComponent,
     ClassComponent,
-    ListStudentComponent
+    ListStudentComponent,
+    MyAbsentComponent
   ],
   imports: [
     BrowserModule,

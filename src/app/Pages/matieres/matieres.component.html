@@ -1,11 +1,11 @@
-<main class="container">
+<!-- <main class="container">
     <div class="row justify-content-center align-items-center cards ">
         <div class="col-3 card">
             <div class="row d">
                 <div class="div1 colorRed">
                     
                 </div>
-                <div class="col details">
+                <div class="col details" (click)="navigateToStudent('Programmation', '09832412')">
                     <div class="row justify-content-center align-items-center Mname">
                         Programmation
                     </div>
@@ -29,6 +29,30 @@
         </div>
         <div class="col-3 card">
             d
+        </div>
+    </div>
+</main> -->
+<main class="container">
+    <div class="row justify-content-center align-items-center cards">
+        <div
+        class="col-3 card"
+        *ngFor="let card of subjects"
+        (click)="navigateToStudent(card.subject, user.id)">
+            <div class="row d">
+
+                <div class="div1"
+                [ngClass]="{
+                colorRed: !card.eliminet,
+                colorGreen: card.eliminet
+                }">
+                </div> <!-- Dynamic color class -->
+
+        <div class="col details">
+            <div class="row justify-content-center align-items-center Mname">
+                {{ card.subject }}  {{ card.eliminet }}<!-- Display the card title -->
+            </div>
+            </div>
+        </div>
         </div>
     </div>
 </main>

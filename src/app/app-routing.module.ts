@@ -7,8 +7,10 @@ import { ProfileComponent } from './Pages/profile/profile.component';
 import { MatieresComponent } from './Pages/matieres/matieres.component';
 import { ClassComponent } from './Pages/class/class.component';
 import { ListStudentComponent } from './Pages/list-student/list-student.component';
-
+import { MyAbsentComponent } from './Pages/my-absent/my-absent.component';
 const routes: Routes = [
+
+  { path: 'MyAbsent/:subject/:id', component: MyAbsentComponent },
   { path: 'ListStudent/:subject/:classe', component: ListStudentComponent },
   { path: 'Class', component: ClassComponent },
   { path: 'Login', component: LoginComponent },

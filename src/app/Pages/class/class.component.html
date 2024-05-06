@@ -1,8 +1,8 @@
-<main class="container">
+<!-- <main class="container">
   <div class="row justify-content-center align-items-center cards ">
       <div class="col-3 card">
           <div class="row d">
-              <div class="div1 colorRed">
+              <div class="div1">
                   
               </div>
               <div class="col details">
@@ -14,8 +14,7 @@
       </div>
       <div class="col-3 card">
           <div class="row d">
-              <div class="div1 colorGreen">
-                  
+              <div class="div1">
               </div>
               <div class="col details">
                   <div class="row justify-content-center align-items-center Mname">
@@ -25,10 +24,43 @@
           </div>
       </div>
       <div class="col-3 card">
-            Programmation DSI22
-      </div>
-      <div class="col-3 card">
-        Developpement DSI22
-      </div>
+        <div class="row d">
+            <div class="div1">
+            </div>
+            <div class="col details">
+                <div class="row justify-content-center align-items-center Mname">
+                    Programmation DSI22
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 card">
+        <div class="row d">
+            <div class="div1">
+            </div>
+            <div class="col details">
+                <div class="row justify-content-center align-items-center Mname">
+                    Developpement DSI22
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
-</main>
+</main> -->
+<main class="container">
+    <div class="row justify-content-center align-items-center cards">
+      <div
+        class="col-3 card"
+        *ngFor="let card of cards"
+        (click)="navigateToStudent(card.subject, card.classe)">
+        <div class="row d">
+          <div></div> <!-- Dynamic color class -->
+          <div class="col details">
+            <div class="row justify-content-center align-items-center Mname">
+              {{ card.subject }}  {{ card.classe }}<!-- Display the card title -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>

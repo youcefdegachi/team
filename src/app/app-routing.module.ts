@@ -9,7 +9,7 @@ import { ClassComponent } from './Pages/class/class.component';
 import { ListStudentComponent } from './Pages/list-student/list-student.component';
 
 const routes: Routes = [
-  { path: 'ListStudent', component: ListStudentComponent },
+  { path: 'ListStudent/:subject/:classe', component: ListStudentComponent },
   { path: 'Class', component: ClassComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Matieres', component: MatieresComponent },

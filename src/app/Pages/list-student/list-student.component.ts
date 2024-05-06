@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Student } from '../../models/user.model';
+import { ActivatedRoute } from '@angular/router';
+
+
+
+
 @Component({
   selector: 'app-list-student',
   templateUrl: './list-student.component.html',
@@ -9,6 +14,7 @@ import { Student } from '../../models/user.model';
 
 
 export class ListStudentComponent {
+  constructor(private route: ActivatedRoute) {}
 
 
   students: Student[] = [
@@ -20,6 +26,24 @@ export class ListStudentComponent {
     student.isAbsent = !student.isAbsent;
   }
 
+
+
+  /*//todo: get subject and class form class.componnent */
+  subject!: string;
+  className!: string;
+
+
+  ngOnInit() {
+    // Retrieve the combined information from the route
+    this.subject = this.route.snapshot.paramMap.get('subject') ?? '';
+    this.className = this.route.snapshot.paramMap.get('classe') ?? '';
+    if (this.subject && this.className) {
+      // Assuming the format is "Subject Class"
+        this.subject;
+        this.className;
+      
+    }
+  }
   // isAbsent: boolean = false;
 
 

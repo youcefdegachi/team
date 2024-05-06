@@ -5,8 +5,10 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegisterComponent } from './Pages/register/register.component';
 import { ProfileComponent } from './Pages/profile/profile.component';
 import { MatieresComponent } from './Pages/matieres/matieres.component';
+import { ClassComponent } from './Pages/class/class.component';
 
 const routes: Routes = [
+  { path: 'Class', component: ClassComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Matieres', component: MatieresComponent },
   { path: 'Profile', component: ProfileComponent },

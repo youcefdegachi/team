@@ -13,6 +13,7 @@ import { MatieresComponent } from './Pages/matieres/matieres.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
+import { ClassComponent } from './Pages/class/class.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './Component/footer/footer.component';
     ProfileComponent,
     MatieresComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ClassComponent
   ],
   imports: [
     BrowserModule,

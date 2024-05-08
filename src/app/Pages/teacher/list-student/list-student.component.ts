@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from '../../models/user.model';
+import { Student } from '../../../models/user.model';
 import { ActivatedRoute } from '@angular/router';
 
 

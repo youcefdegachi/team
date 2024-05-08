@@ -1,0 +1,17 @@
+<main class="container">
+  <div class="row justify-content-center align-items-center cards">
+  <div
+  class="col-3 card"
+  *ngFor="let card of cards"
+  (click)="navigateToStudent(card.className)">
+  <div class="row d">
+      <div></div> <!-- Dynamic color class -->
+      <div class="col details">
+      <div class="row justify-content-center align-items-center Mname">
+          {{ card.className }}<!-- Display the card title -->
+      </div>
+      </div>
+  </div>
+  </div>
+</div>
+</main>

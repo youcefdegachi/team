@@ -1,15 +1,35 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './Pages/home/home.component';
-import { LoginComponent } from './Pages/login/login.component';
-import { RegisterComponent } from './Pages/register/register.component';
-import { ProfileComponent } from './Pages/profile/profile.component';
-import { MatieresComponent } from './Pages/matieres/matieres.component';
-import { ClassComponent } from './Pages/class/class.component';
-import { ListStudentComponent } from './Pages/list-student/list-student.component';
-import { MyAbsentComponent } from './Pages/my-absent/my-absent.component';
+import { HomeComponent } from './Pages/log/home/home.component';
+import { LoginComponent } from './Pages/log/login/login.component';
+import { RegisterComponent } from './Pages/log/register/register.component';
+import { ProfileComponent } from './Pages/log/profile/profile.component';
+import { MatieresComponent } from './Pages/student/matieres/matieres.component';
+import { ClassComponent } from './Pages/teacher/class/class.component';
+import { ListStudentComponent } from './Pages/teacher/list-student/list-student.component';
+import { MyAbsentComponent } from './Pages/student/my-absent/my-absent.component';
+
+import { ClassListComponent } from './Pages/chief/ClassListComponents/class-list/class-list.component';
+import { DirectorListComponent } from './Pages/chief/director-list/director-list.component';
+import { StudentListComponent } from './Pages/chief/ClassListComponents/student-list/student-list.component';
+import { TeacherListComponent } from './Pages/chief/teacherCompoent/teacher-list/teacher-list.component';
+import { EliminateComponent } from './Pages/chief/eliminationCompnents/eliminate/eliminate.component';
+
+
+
+
+
+
+
+
+
 const routes: Routes = [
 
+  { path: 'EliminateList', component: EliminateComponent },
+  { path: 'StudentList/:ClassName', component: StudentListComponent },
+  { path: 'ClassList', component: ClassListComponent },
+  { path: 'TeacherList', component: TeacherListComponent },
+  { path: 'DirectorList', component: DirectorListComponent },
   { path: 'MyAbsent/:subject/:id', component: MyAbsentComponent },
   { path: 'ListStudent/:subject/:classe', component: ListStudentComponent },
   { path: 'Class', component: ClassComponent },

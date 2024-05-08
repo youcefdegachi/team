@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { studentSubject } from '../../models/subject.model';
+import { studentSubject } from '../../../models/subject.model';
 
 @Component({
   selector: 'app-matieres',
@@ -18,7 +18,6 @@ export class MatieresComponent {
   ];
 
   constructor(private router:Router) {}
-
 
   navigateToStudent(subject: string,id:string ) {
     this.router.navigate([`/MyAbsent/`, subject , id]);

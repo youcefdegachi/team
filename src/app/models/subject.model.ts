@@ -20,3 +20,8 @@ export interface SessionForStudent {
   dateSession:Date;
   isPresent: boolean;
 }
+
+export interface Class{
+  id: number;
+  className: string;
+}

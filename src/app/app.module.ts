@@ -3,19 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router'; // Import RouterModule here
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './Pages/home/home.component';
-import { LoginComponent } from './Pages/login/login.component';
-import { RegisterComponent } from './Pages/register/register.component';
+import { HomeComponent } from './Pages/log/home/home.component';
+import { LoginComponent } from './Pages/log/login/login.component';
+import { RegisterComponent } from './Pages/log/register/register.component';
 import { PostComponent } from './Component/post/post.component';
 import AOS from 'aos';
-import { ProfileComponent } from './Pages/profile/profile.component';
-import { MatieresComponent } from './Pages/matieres/matieres.component';
+import { ProfileComponent } from './Pages/log/profile/profile.component';
+import { MatieresComponent } from './Pages/student/matieres/matieres.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
-import { ClassComponent } from './Pages/class/class.component';
-import { ListStudentComponent } from './Pages/list-student/list-student.component';
-import { MyAbsentComponent } from './Pages/my-absent/my-absent.component';
+import { ClassComponent } from './Pages/teacher/class/class.component';
+import { ListStudentComponent } from './Pages/teacher/list-student/list-student.component';
+import { MyAbsentComponent } from './Pages/student/my-absent/my-absent.component';
+import { DirectorListComponent } from './Pages/chief/director-list/director-list.component';
+import { TeacherListComponent } from './Pages/chief/teacherCompoent/teacher-list/teacher-list.component';
+import { ClassListComponent } from './Pages/chief/ClassListComponents/class-list/class-list.component';
+import { StudentListComponent } from './Pages/chief/ClassListComponents/student-list/student-list.component';
+import { EliminateComponent } from './Pages/chief/eliminationCompnents/eliminate/eliminate.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { MyAbsentComponent } from './Pages/my-absent/my-absent.component';
     FooterComponent,
     ClassComponent,
     ListStudentComponent,
-    MyAbsentComponent
+    MyAbsentComponent,
+    DirectorListComponent,
+    TeacherListComponent,
+    ClassListComponent,
+    StudentListComponent,
+    EliminateComponent
   ],
   imports: [
     BrowserModule,

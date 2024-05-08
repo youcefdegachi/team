@@ -1,0 +1,41 @@
+<!-- Component HTML template (e.g., director-list.component.html) -->
+<div style="margin-top: 50px; margin-left: 50px;">
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th># ID</th>
+        <th># CIN</th>
+        <th># Name</th>
+        <th># Email</th>
+        <th># Edit</th> <!-- Column for the edit button -->
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let director of directors">
+        <tr>
+          <td>{{ director.id }}</td>
+          <td>{{ director.cin }}</td>
+          <td>{{ director.name }}</td>
+          <td>{{ director.email }}</td>
+          <td>
+            <!-- Bootstrap edit button -->
+            <button
+              type="button"
+              class="btn btn-warning btn-sm"
+              (click)="editDirector(director.id)" 
+            >
+              Edit
+            </button>
+          </td>
+        </tr>
+        
+        <!-- Optional: Display students associated with each director -->
+        <tr *ngFor="let student of director.students">
+          <td colspan="4">
+            - {{ student.cin }} - {{ student.name }} - {{ student.email }}
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>

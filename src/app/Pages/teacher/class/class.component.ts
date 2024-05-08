@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { teachignSubject } from '../../models/subject.model';
+import { teachignSubject } from '../../../models/subject.model';
 
 @Component({
   selector: 'app-class',

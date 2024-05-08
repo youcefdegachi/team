@@ -24,8 +24,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.storedUserInfo = localStorage.getItem('userInfo');
+    // console.log(localStorage.getItem('userInfo'));
     this.ListOfRutes1 = [{ "Route": "Login", "Name": "Se connecter" },];
-
     if (this.storedUserInfo) {
       // Parse stored user info
       this.userInfo = JSON.parse(this.storedUserInfo);
@@ -54,7 +54,23 @@ export class HeaderComponent implements OnInit {
             { "Route": 'Profile', "Name": 'Profile' },
             { "Route": 'Logout', "Name": 'Se deconnecter' }
           ];
-        } else {
+        }  else if (this.userInfo.role === 'chief') {
+          this.ListOfRutes1 = [
+            { "Route": 'DirectorList', "Name": 'Director' },
+            { "Route": 'ClassList', "Name": 'classList' },
+            { "Route": 'EliminateList', "Name": 'eliminate' },
+            { "Route": 'TeacherList', "Name": 'teacher' },
+            { "Route": 'Profile', "Name": 'Profile' },
+            { "Route": 'Logout', "Name": 'Se deconnecter' }
+          ];
+        }else if (this.userInfo.role === 'secretary') {
+          this.ListOfRutes1 = [
+            { "Route": 'Class', "Name": 'class' },
+            { "Route": 'Student', "Name": 'student' },
+            { "Route": 'Profile', "Name": 'Profile' },
+            { "Route": 'Logout', "Name": 'Se deconnecter' }
+          ];
+        }else {
           console.log(`User role is not recognized: ${this.userInfo.role}`);
         }
       } else {

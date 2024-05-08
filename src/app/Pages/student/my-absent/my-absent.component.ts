@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Student } from '../../models/user.model';
+import { Student } from '../../../models/user.model';
 import { ActivatedRoute } from '@angular/router';
-import { SessionForStudent } from '../../models/subject.model';
+import { SessionForStudent } from '../../../models/subject.model';
 
 @Component({
   selector: 'app-my-absent',

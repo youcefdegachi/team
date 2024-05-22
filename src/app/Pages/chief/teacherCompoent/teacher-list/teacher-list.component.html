@@ -1,1 +1,42 @@
-<p>teacher-list works!</p>
+<div style="margin-top: 50px; margin-left: 50px;">
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th># ID</th>
+        <th># CIN</th>
+        <th># Name</th>
+        <th># Classes</th> <!-- List of classes -->
+        <th># Subjects</th> <!-- List of subjects -->
+        <th># Edit</th> <!-- Column for the edit button -->
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let teacher of teachers">
+        <tr>
+          <td>{{ teacher.id }}</td>
+          <td>{{ teacher.cin }}</td>
+          <td>{{ teacher.name }}</td>
+          <td>{{ teacher.classes.join(', ') }}</td> <!-- Joining the class names -->
+          <td>{{ teacher.subjects.join(', ') }}</td> <!-- Joining the subject names -->
+          <td>
+            <!-- Bootstrap edit button -->
+            <button
+              type="button"
+              class="btn btn-warning btn-sm"
+              (click)="editTeacher(teacher.id)" 
+            >
+              Edit
+            </button>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <div>
+    <button
+      type="button"
+      class="btn btn-primary"  >
+      add teacher
+    </button>
+  </div>
+</div>

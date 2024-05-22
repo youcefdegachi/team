@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router'; // Import RouterModule here
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Pages/log/home/home.component';
@@ -21,6 +23,7 @@ import { TeacherListComponent } from './Pages/chief/teacherCompoent/teacher-list
 import { ClassListComponent } from './Pages/chief/ClassListComponents/class-list/class-list.component';
 import { StudentListComponent } from './Pages/chief/ClassListComponents/student-list/student-list.component';
 import { EliminateComponent } from './Pages/chief/eliminationCompnents/eliminate/eliminate.component';
+import { MatiereComponent } from './Pages/chief/eliminationComponents/matiere/matiere.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ import { EliminateComponent } from './Pages/chief/eliminationCompnents/eliminate
     TeacherListComponent,
     ClassListComponent,
     StudentListComponent,
-    EliminateComponent
+    EliminateComponent,
+    MatiereComponent
   ],
   imports: [
     BrowserModule,

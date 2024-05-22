@@ -58,7 +58,7 @@ export class HeaderComponent implements OnInit {
           this.ListOfRutes1 = [
             { "Route": 'DirectorList', "Name": 'Director' },
             { "Route": 'ClassList', "Name": 'classList' },
-            { "Route": 'EliminateList', "Name": 'eliminate' },
+            { "Route": 'EliminateMatieres', "Name": 'eliminate' },
             { "Route": 'TeacherList', "Name": 'teacher' },
             { "Route": 'Profile', "Name": 'Profile' },
             { "Route": 'Logout', "Name": 'Se deconnecter' }

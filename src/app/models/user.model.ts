@@ -12,7 +12,14 @@ export interface StudentDetail{
   email: string;
 }
 
-
+export interface StudentEliminate{
+  id: number;
+  cin: number;
+  name: string;
+  email: string;
+  numberAbsent: number;
+  isEliminate: boolean;
+}
 
 
 export interface teacher{
@@ -21,6 +28,13 @@ export interface teacher{
   classe: string;
 }
 
+export interface teacherDetail{
+  id: number;
+  cin: number;
+  name: string;
+  classes: string[];
+  subjects: string[];
+}
 
 export interface StudentInfo {
   cin: number;

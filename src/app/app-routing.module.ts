@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AppModule } from './app.module';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './Pages/log/home/home.component';
 import { LoginComponent } from './Pages/log/login/login.component';
@@ -14,7 +15,7 @@ import { DirectorListComponent } from './Pages/chief/director-list/director-list
 import { StudentListComponent } from './Pages/chief/ClassListComponents/student-list/student-list.component';
 import { TeacherListComponent } from './Pages/chief/teacherCompoent/teacher-list/teacher-list.component';
 import { EliminateComponent } from './Pages/chief/eliminationCompnents/eliminate/eliminate.component';
-
+import { MatiereComponent } from './Pages/chief/eliminationComponents/matiere/matiere.component';
 
 
 
@@ -24,8 +25,10 @@ import { EliminateComponent } from './Pages/chief/eliminationCompnents/eliminate
 
 
 const routes: Routes = [
+  { path: 'EliminateMatieres', component: MatiereComponent },
 
-  { path: 'EliminateList', component: EliminateComponent },
+  { path: 'EliminateList/:subject/:class', component: EliminateComponent },
+  { path: 'EliminateList/:subject', component: ClassListComponent },
   { path: 'StudentList/:ClassName', component: StudentListComponent },
   { path: 'ClassList', component: ClassListComponent },
   { path: 'TeacherList', component: TeacherListComponent },

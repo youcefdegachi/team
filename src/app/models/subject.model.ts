@@ -3,6 +3,12 @@ export interface teachignSubject {
   classe: string;
 }
 
+export interface matiere{
+  id: number;
+  subject: string;
+}
+
+
 export interface studentSubject {
   subject: string;
   eliminet: boolean;
